@@ -19,14 +19,18 @@ body{
     float: right;
 }
 
-header ul li {
+ul li {
     display: inline-block;
 }
 
-header ul li a {
+ul li a {
     color: black;
     padding: 0.5rem;
     opacity: 0.8;
+}
+
+ul li a:hover {
+    text-decoration: underline;
 }
 
 .header__right--appicon{
@@ -48,9 +52,6 @@ header ul li a {
     cursor: pointer;
 }
 
-header ul li a:hover {
-    text-decoration: underline;
-}
 
 .main{
     margin-top: 200px;
@@ -102,16 +103,38 @@ header ul li a:hover {
     border-radius: 4px;
     margin: 30px 0;
     padding: 0 16px;
-    height: 36PX;
+    height: 36px;
 }
 
 .main__buttons--left:hover,
 .main__buttons--right:hover{
     border: 1px solid #d3d3d3;
     box-shadow: rgb(211, 211, 211) 1px 1px 10px;
+    cursor: pointer;
 }
 
 .main__language a:hover{
     text-decoration: underline;
 }
 
+.footer{
+    position: fixed;
+    bottom: 0;
+    background-color: #f2f2f2;
+    width: 100%;
+    line-height: 40px;
+}
+
+.footer__country{
+    font-size: 14px;
+    padding-left: 20px;
+    border-bottom: 1px solid #dadce0;
+}
+
+.footer__bottom--left{
+    float: left;
+}
+
+.footer__bottom--right{
+    float:right;
+}
